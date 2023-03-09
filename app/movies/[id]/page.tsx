@@ -14,6 +14,7 @@ export default async function page({ params: { id } }: ParamsProps) {
         alt={movieDetails.title}
         width={300}
         height={300}
+        priority={true}
       />
       <h1>{movieDetails.title}</h1>
       <h3>{movieDetails.release_date}</h3>
