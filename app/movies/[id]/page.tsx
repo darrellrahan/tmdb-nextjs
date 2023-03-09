@@ -8,14 +8,7 @@ export default async function page({ params: { id } }: ParamsProps) {
   const movieDetails = await getMovieDetails(id);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "baseline",
-        gap: "1rem",
-      }}
-    >
+    <div className="flex flex-col items-baseline gap-4">
       <Image
         src={`https://image.tmdb.org/t/p/w500${movieDetails.backdrop_path}`}
         alt={movieDetails.title}
@@ -25,7 +18,7 @@ export default async function page({ params: { id } }: ParamsProps) {
       <h1>{movieDetails.title}</h1>
       <h3>{movieDetails.release_date}</h3>
       <p>{movieDetails.overview}</p>
-      <Link href="/" className="link">
+      <Link href="/" className="no-underline hover:underline text-blue-600">
         Back to Home
       </Link>
     </div>

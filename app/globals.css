@@ -27,22 +27,6 @@ a {
   text-decoration: none;
 }
 
-.link {
-  color: #3366cc;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
 img {
   object-fit: cover;
-}
-
-.loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
